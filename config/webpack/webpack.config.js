@@ -17,5 +17,15 @@ module.exports = {
     externals: {
 		'react': 'React',
 		'react-dom': 'ReactDOM'
-    }
+    },
+    module: {
+    loaders: [
+      {
+                test: /\.css$/,
+                loaders: ['style-loader','css-loader']
+
+        
+      }
+    ]
+  }
 }
