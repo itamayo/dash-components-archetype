@@ -4,7 +4,6 @@ var path = require('path');
 
 var ROOT = process.cwd();
 var SRC = path.join(ROOT, 'src');
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
     cache: false,
@@ -27,16 +26,7 @@ module.exports = {
 
         
       }
-    ],
-    plugins: [
-	  new UglifyJSPlugin({
-	    test: /\.js($|\?)/i,
-	    sourceMap: true,
-	    uglifyOptions: {
-		compress: true
-	    }
-	  }),
-	]
+    ]
 	    
   }
 }
