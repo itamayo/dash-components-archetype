@@ -27,6 +27,15 @@ module.exports = {
         
       }
     ],
+    plugins: [
+	  new UglifyJSPlugin({
+	    test: /\.js($|\?)/i,
+	    sourceMap: true,
+	    uglifyOptions: {
+		compress: true
+	    }
+	  }),
+	]
 	    
   }
 }
