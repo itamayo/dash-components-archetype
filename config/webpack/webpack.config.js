@@ -27,11 +27,9 @@ module.exports = {
         
       },
 	{
-	test: /\.js$/,
-        loader: 'babel',
-        query: {
-          presets: ['es2015']
-        }
+	 test: /\.(js|jsx)$/,
+        use: 'babel-loader?presets[]=es2015',
+        exclude: /(node_modules|bower_components)/,
     }
     ]
   }
