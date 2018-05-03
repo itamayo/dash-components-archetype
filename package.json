@@ -25,7 +25,8 @@
   "devDependencies": {
     "builder-support": "^0.3.0",
     "eslint": "^2.8.0",
-    "eslint-plugin-import": "^1.9.2"
+    "eslint-plugin-import": "^1.9.2",
+    "uglifyjs-webpack-plugin":"latest"
   },
   "scripts": {
     "builder:check": "eslint --fix --ignore-path .gitignore --ext *.js config init",
