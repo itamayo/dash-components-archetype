@@ -20,7 +20,7 @@
     "react-docgen": "^2.8.2",
     "rimraf": "^2.6.1",
     "webpack": "1.15.0",
-    "webpack-partial": "^1.2.0"
+    "webpack-partial": "1.2.0"
   },
   "devDependencies": {
     "builder-support": "^0.3.0",
